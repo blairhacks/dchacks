@@ -3,6 +3,18 @@
 
 @custom-variant dark (&:is(.dark *));
 
+@theme {
+  --color-hero-bg: #f7258526;
+  --color-btn-p: #f72585b2;
+  --color-bg: #0f0b1f;
+  --color-text-p: #ffffff;
+  --color-text-s: #ffffffdd;
+  --color-grad-s-from: #531199;
+  --color-grad-s-to: #3a0ca3;
+  --color-grad-p-from: #f72585;
+  --color-grad-p-to: #ea00ff;
+}
+
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
