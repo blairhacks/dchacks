@@ -1,7 +1,12 @@
-import { Navbar } from "@/components/Navbar";
 import "./globals.css";
 
 import type { Metadata } from "next";
+import { Inter } from "next/font/google";
+
+const inter = Inter({
+  subsets: ["latin"],
+  weight: "400",
+});
 
 export const metadata: Metadata = {
   title: "DCHacks",
@@ -15,8 +20,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className="antialiased" suppressHydrationWarning>
-        <Navbar />
+      <body
+        className={"antialiased " + inter.className}
+        suppressHydrationWarning
+      >
+        {/* <Navbar /> */}
         {children}
       </body>
     </html>

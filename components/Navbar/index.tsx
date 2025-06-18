@@ -1,11 +1,12 @@
+import { Anta } from "next/font/google";
 import Link from "next/link";
+
 import {
   NavigationMenu,
   NavigationMenuItem,
   NavigationMenuLink,
   NavigationMenuList,
 } from "../ui/navigation-menu";
-import { Anta } from "next/font/google";
 
 const anta = Anta({
   subsets: ["latin"],
