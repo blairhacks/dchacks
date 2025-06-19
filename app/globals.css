@@ -140,6 +140,25 @@
   --sidebar-ring: oklch(0.556 0 0);
 }
 
+.gradient-underline-p {
+  position: relative;
+}
+.gradient-underline-p::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0.1em;
+  height: 2px;
+  background: linear-gradient(
+    to right,
+    var(--color-grad-p-from),
+    var(--color-grad-p-to)
+  );
+  border-radius: 1px;
+  pointer-events: none;
+}
+
 @layer base {
   * {
     @apply border-border outline-ring/50;
