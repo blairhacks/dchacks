@@ -20,10 +20,11 @@ export function Register() {
         <p className="text-center">
           DCHacks isn't taking full registrations just yet, but feel free to
           fill out our interest form to be notified of any updates! We expect
-          registration to start around August when more details are finalized.
+          registration to start around <b>August</b> when more details are
+          finalized.
         </p>
       </div>
-      <div className="mt-8 flex flex-col items-center justify-center">
+      <div className="mt-8 flex flex-row items-center justify-center">
         <Button>I'm Interested!</Button>
       </div>
     </div>
