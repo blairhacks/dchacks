@@ -1,6 +1,7 @@
 import { AboutUs } from "@/components/AboutUs";
 import { Hero } from "@/components/Hero";
 import { JoinTeam } from "@/components/JoinTeam";
+import { Register } from "@/components/Register";
 import { Anta } from "next/font/google";
 
 const anta = Anta({
@@ -10,7 +11,7 @@ const anta = Anta({
 
 export default function Home() {
   return (
-    <div className="bg-bg">
+    <div className="bg-bg pb-20">
       <svg width="0" height="0" style={{ position: "absolute" }}>
         <linearGradient
           id="primary-gradient"
@@ -26,6 +27,7 @@ export default function Home() {
       <Hero />
       <AboutUs />
       <JoinTeam />
+      <Register />
     </div>
   );
 }
