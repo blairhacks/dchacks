@@ -1,5 +1,6 @@
 import { AboutUs } from "@/components/AboutUs";
 import { Hero } from "@/components/Hero";
+import { JoinTeam } from "@/components/JoinTeam";
 import { Anta } from "next/font/google";
 
 const anta = Anta({
@@ -24,6 +25,7 @@ export default function Home() {
       </svg>
       <Hero />
       <AboutUs />
+      <JoinTeam />
     </div>
   );
 }

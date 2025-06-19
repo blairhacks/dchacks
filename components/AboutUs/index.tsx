@@ -14,7 +14,7 @@ const anta = Anta({
 
 export function AboutUs() {
   return (
-    <div className="mx-auto min-h-[100vh] max-w-7xl p-8 py-24">
+    <div className="mx-auto min-h-[100vh] max-w-7xl p-8 pt-24">
       <div className="flex flex-row justify-center">
         <h1
           className={`${anta.className} bg-gradient-p bg-clip-text text-5xl text-transparent`}
@@ -45,7 +45,7 @@ export function AboutUs() {
         <div className="text-p">
           <div className="flex flex-row items-end justify-start gap-x-4 pb-4">
             <HiOutlineCalendarDateRange
-              size="80px"
+              size="64px"
               style={{ stroke: "url(#primary-gradient)" }}
               fill="none"
             />
@@ -76,7 +76,7 @@ export function AboutUs() {
           <div className="flex flex-row items-end justify-end gap-x-4 pb-4">
             <h2 className="pb-1 text-3xl">All students may participate!</h2>
             <HiOutlineAcademicCap
-              size="80px"
+              size="64px"
               style={{ stroke: "url(#primary-gradient)" }}
               fill="none"
             />
