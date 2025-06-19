@@ -6,6 +6,7 @@ import {
 
 import { Anta } from "next/font/google";
 import Link from "next/dist/client/link";
+import { ScrollTo } from "@/components/ScrollTo";
 
 const anta = Anta({
   subsets: ["latin"],
@@ -69,12 +70,12 @@ export function AboutUs() {
             <br />
             <b>
               We are looking for more team members.{" "}
-              <Link
-                href="#"
+              <ScrollTo
+                id="join"
                 className="bg-gradient-p gradient-underline-p bg-clip-text text-transparent"
               >
                 Join us
-              </Link>{" "}
+              </ScrollTo>{" "}
               below!
             </b>
           </p>
@@ -107,12 +108,12 @@ export function AboutUs() {
             <br />
             <b>
               Fill out our{" "}
-              <Link
-                href="#"
+              <ScrollTo
+                id="register"
                 className="bg-gradient-p gradient-underline-p bg-clip-text text-transparent"
               >
                 interest form
-              </Link>{" "}
+              </ScrollTo>{" "}
               below!
             </b>
           </p>

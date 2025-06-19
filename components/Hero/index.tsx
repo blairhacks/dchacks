@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Anta } from "next/font/google";
 import { HiArrowDown } from "react-icons/hi2";
-import { LearnMoreScroll } from "./LearnMoreScroll";
+import { ScrollTo } from "@/components/ScrollTo";
 
 const anta = Anta({
   subsets: ["latin"],
@@ -24,14 +24,22 @@ export function Hero() {
         <div className="flex flex-1 flex-col items-center justify-end">
           <div className="flex flex-col items-center">
             <div className="mb-16 flex flex-row gap-12">
-              <Button scrollToId="join">Join Our Team</Button>
-              <Button scrollToId="register">Register</Button>
-              <Button scrollToId="sponsors">Sponsor Us</Button>
+              <ScrollTo id="join">
+                <Button>Join Our Team</Button>
+              </ScrollTo>
+              <ScrollTo id="register">
+                <Button>Register</Button>
+              </ScrollTo>
+              <ScrollTo id="sponsors">
+                <Button>Sponsor Us</Button>
+              </ScrollTo>
             </div>
-            <LearnMoreScroll>
-              <HiArrowDown size="20px" />
-              <p className="text-xl">Learn More</p>
-            </LearnMoreScroll>
+            <ScrollTo id="about">
+              <div className="mb-20 flex flex-col items-center text-white duration-100 hover:cursor-pointer hover:font-semibold">
+                <HiArrowDown size="20px" />
+                <p className="text-xl">Learn More</p>
+              </div>
+            </ScrollTo>
           </div>
         </div>
       </div>
