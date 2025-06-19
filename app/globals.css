@@ -3,12 +3,28 @@
 
 @custom-variant dark (&:is(.dark *));
 
+@utility bg-gradient-p {
+  background-image: linear-gradient(
+    to right,
+    var(--color-grad-p-from),
+    var(--color-grad-p-to)
+  );
+}
+
+@utility bg-gradient-s {
+  background-image: linear-gradient(
+    to right,
+    var(--color-grad-s-from),
+    var(--color-grad-s-to)
+  );
+}
+
 @theme {
   --color-hero-bg: #f7258526;
   --color-btn-p: #f72585b2;
   --color-bg: #0f0b1f;
-  --color-text-p: #ffffff;
-  --color-text-s: #ffffffdd;
+  --color-p: #ffffff;
+  --color-s: #ffffffdd;
   --color-grad-s-from: #531199;
   --color-grad-s-to: #3a0ca3;
   --color-grad-p-from: #f72585;

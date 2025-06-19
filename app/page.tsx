@@ -1,6 +1,7 @@
-import { Button } from "@/components/ui/button";
+import { HiOutlineRocketLaunch } from "react-icons/hi2";
+
+import { Hero } from "@/components/Hero";
 import { Anta } from "next/font/google";
-import { HiArrowDown } from "react-icons/hi2";
 
 const anta = Anta({
   subsets: ["latin"],
@@ -9,35 +10,31 @@ const anta = Anta({
 
 export default function Home() {
   return (
-    <div>
-      <div className="flex h-[110vh] w-full flex-col bg-[url(/hero_image.png)] bg-cover bg-top bg-no-repeat">
-        <div className="flex h-[100vh] grow flex-col items-center justify-center">
-          <div className="flex flex-1 flex-col items-center justify-end">
-            <div className="bg-hero-bg rounded-2xl p-8 text-center text-white">
-              <h1 className={anta.className + " mb-4 text-8xl"}>DCHacks</h1>
-              <p className="text-xl">
-                An upcoming hackathon coming to the DMV For secondary students
-                of all skill levels
-              </p>
+    <div className="bg-bg">
+      <Hero />
+      <div className="mx-auto h-[100vh] max-w-7xl p-8">
+        <div className="mt-8 flex flex-row justify-center">
+          <h1
+            className={`${anta.className} bg-gradient-p bg-clip-text text-5xl text-transparent`}
+          >
+            About Us
+          </h1>
+        </div>
+        <div className="mt-16 flex flex-row items-center justify-between">
+          <div className="text-p flex w-lg flex-col items-center justify-center gap-y-4">
+            <div className="rounded-full border-2 p-3">
+              <HiOutlineRocketLaunch size="32px" />
             </div>
+            <p className="text-center text-3xl">Our Mission</p>
           </div>
-          <div className="flex flex-1 flex-col items-center justify-end">
-            <div className="flex flex-col items-center">
-              <div className="mb-16 flex flex-row gap-12">
-                <Button>Join Our Team</Button>
-                <Button>Register</Button>
-                <Button>Sponsor Us</Button>
-              </div>
-              <div className="mb-20 flex flex-col items-center text-white">
-                <HiArrowDown size="20px" />
-                <p className="text-xl">Learn More</p>
-              </div>
-            </div>
+          <div className="bg-gradient-s flex w-lg flex-row items-center justify-center rounded-2xl p-8">
+            <p className="text-p text-center text-lg">
+              Our mission is to inspire students to innovate and build using
+              technology while creating a sense of community.
+            </p>
           </div>
         </div>
-        <div className="to-bg h-[10vh] bg-linear-to-b from-transparent"></div>
       </div>
-      <div className="bg-bg h-[100vh]"></div>
     </div>
   );
 }
