@@ -23,9 +23,9 @@ export function Hero() {
         <div className="flex flex-1 flex-col items-center justify-end">
           <div className="flex flex-col items-center">
             <div className="mb-16 flex flex-row gap-12">
-              <Button>Join Our Team</Button>
-              <Button>Register</Button>
-              <Button>Sponsor Us</Button>
+              <Button scrollToId="join">Join Our Team</Button>
+              <Button scrollToId="register">Register</Button>
+              <Button scrollToId="sponsors">Sponsor Us</Button>
             </div>
             <div className="mb-20 flex flex-col items-center text-white">
               <HiArrowDown size="20px" />

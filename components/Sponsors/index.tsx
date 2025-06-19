@@ -8,7 +8,7 @@ const anta = Anta({
 
 export function Sponsors() {
   return (
-    <div className="mx-auto max-w-7xl p-8 pt-16">
+    <div className="mx-auto max-w-7xl p-8 pt-16" id="sponsors">
       <div className="flex flex-row justify-center">
         <h1
           className={`${anta.className} bg-gradient-p bg-clip-text text-5xl text-transparent`}

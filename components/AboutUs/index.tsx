@@ -14,7 +14,7 @@ const anta = Anta({
 
 export function AboutUs() {
   return (
-    <div className="mx-auto max-w-7xl p-8 pt-24">
+    <div className="mx-auto max-w-7xl p-8 pt-24" id="about">
       <div className="flex flex-row justify-center">
         <h1
           className={`${anta.className} bg-gradient-p bg-clip-text text-5xl text-transparent`}
@@ -67,7 +67,16 @@ export function AboutUs() {
             </Link>{" "}
             <br />
             <br />
-            <b>We are looking for more team members. Join us below!</b>
+            <b>
+              We are looking for more team members.{" "}
+              <Link
+                href="#"
+                className="bg-gradient-p gradient-underline-p bg-clip-text text-transparent"
+              >
+                Join us
+              </Link>{" "}
+              below!
+            </b>
           </p>
         </div>
       </div>
@@ -96,7 +105,16 @@ export function AboutUs() {
             We promise everyone will be able to learn something new by the end
             of the hackathon. <br />
             <br />
-            <b>Fill out our interest form below!</b>
+            <b>
+              Fill out our{" "}
+              <Link
+                href="#"
+                className="bg-gradient-p gradient-underline-p bg-clip-text text-transparent"
+              >
+                interest form
+              </Link>{" "}
+              below!
+            </b>
           </p>
         </div>
       </div>

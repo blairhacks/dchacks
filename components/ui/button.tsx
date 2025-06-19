@@ -1,3 +1,5 @@
+"use client";
+
 import * as React from "react";
 import { Slot } from "@radix-ui/react-slot";
 import { cva, type VariantProps } from "class-variance-authority";
@@ -21,7 +23,7 @@ const buttonVariants = cva(
           "hover:bg-accent hover:text-accent-foreground dark:hover:bg-accent/50",
         link: "text-primary underline-offset-4 hover:underline",
         primary:
-          "bg-gradient-p text-s shadow-md rounded-full hover:ring-1 text-xl",
+          "bg-gradient-p text-s shadow-md rounded-full hover:ring-1 text-xl hover:cursor-pointer",
       },
       size: {
         default: "h-9 px-4 py-2 has-[>svg]:px-3",
@@ -42,17 +44,31 @@ function Button({
   variant,
   size,
   asChild = false,
+  scrollToId,
   ...props
 }: React.ComponentProps<"button"> &
   VariantProps<typeof buttonVariants> & {
     asChild?: boolean;
+    scrollToId?: string;
   }) {
   const Comp = asChild ? Slot : "button";
+
+  const handleClick = (e: React.MouseEvent<HTMLButtonElement, MouseEvent>) => {
+    if (scrollToId) {
+      const el = document.getElementById(scrollToId);
+      if (el) {
+        el.scrollIntoView({ behavior: "smooth" });
+        e.preventDefault();
+      }
+    }
+    if (props.onClick) props.onClick(e);
+  };
 
   return (
     <Comp
       data-slot="button"
       className={cn(buttonVariants({ variant, size, className }))}
+      onClick={handleClick}
       {...props}
     />
   );
