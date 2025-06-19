@@ -1,7 +1,8 @@
-import { Button } from "@/components/ui/button";
 import { Anta } from "next/font/google";
 import { HiArrowDown } from "react-icons/hi2";
+
 import { ScrollTo } from "@/components/ScrollTo";
+import { Button } from "@/components/ui/button";
 
 const anta = Anta({
   subsets: ["latin"],

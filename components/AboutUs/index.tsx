@@ -1,11 +1,11 @@
+import Link from "next/dist/client/link";
+import { Anta } from "next/font/google";
 import {
   HiOutlineAcademicCap,
   HiOutlineCalendarDateRange,
   HiOutlineRocketLaunch,
 } from "react-icons/hi2";
 
-import { Anta } from "next/font/google";
-import Link from "next/dist/client/link";
 import { ScrollTo } from "@/components/ScrollTo";
 
 const anta = Anta({
@@ -95,7 +95,7 @@ export function AboutUs() {
             Have you never touched a code editor before? Or, have you deployed 4
             apps on the App Store? <br />
             <br />
-            Doesn't matter!{" "}
+            Doesn&apos;t matter!{" "}
             <b>
               Secondary students of{" "}
               <span className="bg-gradient-p bg-clip-text text-transparent">

@@ -1,4 +1,4 @@
-'use client';
+"use client";
 import { ReactNode } from "react";
 
 interface ScrollToProps {
@@ -7,13 +7,13 @@ interface ScrollToProps {
   children: ReactNode;
 }
 
-export function ScrollTo({ id, className = '', children }: ScrollToProps) {
+export function ScrollTo({ id, className = "", children }: ScrollToProps) {
   return (
     <span
-      className={className + ' hover:cursor-pointer'}
+      className={className + " hover:cursor-pointer"}
       onClick={() => {
         const el = document.getElementById(id);
-        if (el) el.scrollIntoView({ behavior: 'smooth' });
+        if (el) el.scrollIntoView({ behavior: "smooth" });
       }}
     >
       {children}

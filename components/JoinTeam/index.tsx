@@ -4,6 +4,7 @@ import {
   HiOutlineGlobeAmericas,
   HiOutlinePaintBrush,
 } from "react-icons/hi2";
+
 import { Button } from "../ui/button";
 
 const anta = Anta({
