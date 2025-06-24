@@ -1,4 +1,4 @@
-import Link from "next/dist/client/link";
+import Link from "next/link";
 import { Anta } from "next/font/google";
 import {
   HiOutlineAcademicCap,

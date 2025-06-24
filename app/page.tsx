@@ -1,4 +1,5 @@
 import { AboutUs } from "@/components/AboutUs";
+import { Donate } from "@/components/Donate";
 import { Hero } from "@/components/Hero";
 import { JoinTeam } from "@/components/JoinTeam";
 import { Register } from "@/components/Register";
@@ -24,6 +25,7 @@ export default function Home() {
       <JoinTeam />
       <Register />
       <Sponsors />
+      <Donate />
     </div>
   );
 }
