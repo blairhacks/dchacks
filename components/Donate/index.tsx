@@ -36,7 +36,16 @@ export function Donate() {
             tax-deductible
           </span>
           . We also accept <b>employer donation matches</b>, so your impact can
-          be doubled! <br />
+          be doubled! Donations may be sent using{" "}
+          <Link
+            href="https://hcb.hackclub.com/donations/start/dchacks"
+            target="_blank"
+            className="bg-gradient-p gradient-underline-p bg-clip-text text-transparent"
+          >
+            HCB
+          </Link>
+          , our financial platform.
+          <br />
           <br />
           Your contribution will help provide students in the DC area with an
           opportunity to build innovative projects and learn new skills with

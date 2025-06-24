@@ -1,6 +1,7 @@
 import { Anta } from "next/font/google";
 
 import { Button } from "../ui/button";
+import Link from "next/link";
 
 const anta = Anta({
   subsets: ["latin"],
@@ -22,6 +23,16 @@ export function Sponsors() {
           Our hackathon depends on generous donations from companies and grants
           to sustain. Contributions will be used for the venue, website costs,
           prizes, food, and more. <br />
+          <br />
+          All contributions are tax-deductible, as DCHacks is fiscally sponsored
+          by{" "}
+          <Link
+            href="https://hackclub.com/"
+            className="bg-gradient-p gradient-underline-p bg-clip-text text-transparent"
+          >
+            The Hack Foundation (d.b.a. Hack Club)
+          </Link>
+          , a 501(c)(3) nonprofit organization (EIN: 81-2908499). <br />
           <br />
           View more information about our sponsorship packages below. Contact us
           by filling out the form or emailing us at{" "}
