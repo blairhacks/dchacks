@@ -36,7 +36,13 @@ export function Sponsors() {
           <br />
           View more information about our sponsorship packages below. Contact us
           by filling out the form or emailing us at{" "}
-          <b className="">blairhacks@gmail.com.</b> <br />
+          <Link
+            href="mailto:blairhacks@gmail.com"
+            className="bg-gradient-p gradient-underline-p bg-clip-text text-transparent"
+          >
+            blairhacks@gmail.com
+          </Link>
+          . <br />
           <br />
           We thank you for your generosity.
         </p>
