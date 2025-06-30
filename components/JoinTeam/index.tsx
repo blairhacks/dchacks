@@ -91,7 +91,7 @@ export function JoinTeam() {
         </div>
         <div className="mt-12 flex flex-row justify-center">
           <Button asChild>
-            <Link href="https://tinyurl.com/DCHacksTeam" target="_blank">
+            <Link href="https://bit.ly/4l8492r" target="_blank">
               Apply!
             </Link>
           </Button>
