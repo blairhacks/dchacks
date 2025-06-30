@@ -6,6 +6,7 @@ import {
 } from "react-icons/hi2";
 
 import { Button } from "../ui/button";
+import Link from "next/link";
 
 const anta = Anta({
   subsets: ["latin"],
@@ -20,7 +21,7 @@ export function JoinTeam() {
           <h1 className={`${anta.className} text-5xl`}>Join Us</h1>
         </div>
         <div className="mt-8">
-          <p className="text-xl">
+          <p className="text-center text-xl">
             We are looking to expand our team to reach as many people as
             possible and increase our impact! If you are a high school student
             and want to help us further our mission, apply to one of our roles
@@ -89,7 +90,11 @@ export function JoinTeam() {
           </div>
         </div>
         <div className="mt-12 flex flex-row justify-center">
-          <Button>Apply!</Button>
+          <Button asChild>
+            <Link href="https://tinyurl.com/DCHacksTeam" target="_blank">
+              Apply!
+            </Link>
+          </Button>
         </div>
       </div>
     </div>
