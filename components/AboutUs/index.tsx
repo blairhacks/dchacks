@@ -37,8 +37,18 @@ export function AboutUs() {
           </p>
         </div>
       </div>
-      <div className="mx-auto mt-20 flex flex-row justify-center">
-        <p className="text-p text-3xl">
+      <div className="mx-auto mt-20 flex flex-col items-center">
+        <p className="text-p text-xl">
+          From the organizers of{" "}
+          <Link
+            href="https://blairhacks.com"
+            target="_blank"
+            className="bg-gradient-p gradient-underline-p bg-clip-text text-transparent"
+          >
+            BlairHacks
+          </Link>
+        </p>
+        <p className="text-p mt-8 text-3xl">
           Join us for a 2-day hackathon this October for all secondary students.
         </p>
       </div>
