@@ -1,5 +1,5 @@
-import Link from "next/link";
 import { Anta } from "next/font/google";
+import Link from "next/link";
 import {
   HiOutlineAcademicCap,
   HiOutlineCalendarDateRange,

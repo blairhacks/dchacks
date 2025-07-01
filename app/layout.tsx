@@ -2,6 +2,7 @@ import "./globals.css";
 
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
+import { GoogleAnalytics } from "@next/third-parties/google";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -20,17 +21,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <head>
-        <!-- Google tag (gtag.js) -->
-          <script async src="https://www.googletagmanager.com/gtag/js?id=G-T54MKE337Q"></script>
-          <script>
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-          
-            gtag('config', 'G-T54MKE337Q');
-          </script>
-      </head>
+      <GoogleAnalytics gaId="G-T54MKE337Q" />
       <body
         className={"antialiased " + inter.className}
         suppressHydrationWarning

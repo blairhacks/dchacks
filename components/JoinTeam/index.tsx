@@ -1,4 +1,5 @@
 import { Anta } from "next/font/google";
+import Link from "next/link";
 import {
   HiOutlineCodeBracket,
   HiOutlineGlobeAmericas,
@@ -6,7 +7,6 @@ import {
 } from "react-icons/hi2";
 
 import { Button } from "../ui/button";
-import Link from "next/link";
 
 const anta = Anta({
   subsets: ["latin"],

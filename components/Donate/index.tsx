@@ -1,7 +1,7 @@
 import { Anta } from "next/font/google";
+import Link from "next/link";
 
 import { Button } from "../ui/button";
-import Link from "next/link";
 
 const anta = Anta({
   subsets: ["latin"],
