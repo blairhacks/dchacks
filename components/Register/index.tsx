@@ -1,4 +1,5 @@
 import { Anta } from "next/font/google";
+import Link from "next/link";
 
 import { Button } from "../ui/button";
 
