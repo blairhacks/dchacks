@@ -1,4 +1,5 @@
 import { Anta } from "next/font/google";
+import Link from "next/link";
 
 import { Button } from "../ui/button";
 
@@ -26,7 +27,11 @@ export function Register() {
         </p>
       </div>
       <div className="mt-8 flex flex-row items-center justify-center">
-        <Button>I&apos;m Interested!</Button>
+        <Button asChild>
+          <Link href="https://link.dchacks.org/interest" target="_blank">
+            I&apos;m Interested!
+          </Link>
+        </Button>
       </div>
     </div>
   );
