@@ -1,3 +1,6 @@
+"use client";
+
+import { motion } from "framer-motion";
 import { Anta } from "next/font/google";
 import { HiArrowDown } from "react-icons/hi2";
 
@@ -24,7 +27,13 @@ export function Hero() {
         </div>
         <div className="flex flex-1 flex-col items-center justify-end">
           <div className="flex flex-col items-center">
-            <div className="mb-16 flex flex-row gap-12">
+            <motion.div
+              className="mb-16 flex flex-row gap-12"
+              initial={{ opacity: 0, y: 12 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, amount: 0.3 }}
+              transition={{ duration: 0.55, ease: "easeOut" }}
+            >
               <ScrollTo id="join">
                 <Button>Join Our Team</Button>
               </ScrollTo>
@@ -34,12 +43,18 @@ export function Hero() {
               <ScrollTo id="sponsors">
                 <Button>Sponsor Us</Button>
               </ScrollTo>
-            </div>
+            </motion.div>
             <ScrollTo id="about">
-              <div className="mb-20 flex flex-col items-center text-white duration-100 hover:cursor-pointer hover:font-semibold">
+              <motion.div
+                className="mb-20 flex flex-col items-center text-white duration-100 hover:cursor-pointer hover:font-semibold"
+                initial={{ opacity: 0, y: 12 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true, amount: 0.3 }}
+                transition={{ duration: 0.55, ease: "easeOut" }}
+              >
                 <HiArrowDown size="20px" />
                 <p className="text-xl">Learn More</p>
-              </div>
+              </motion.div>
             </ScrollTo>
           </div>
         </div>

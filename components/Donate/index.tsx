@@ -1,3 +1,6 @@
+"use client";
+
+import { motion } from "framer-motion";
 import { Anta } from "next/font/google";
 import Link from "next/link";
 
@@ -11,19 +14,38 @@ const anta = Anta({
 export function Donate() {
   return (
     <div className="mx-auto max-w-5xl p-8 pt-16" id="register">
-      <div className="flex flex-row justify-center">
+      <motion.div
+        className="flex flex-row justify-center"
+        initial={{ opacity: 0, y: 12 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true, amount: 0.3 }}
+        transition={{ duration: 0.5, ease: "easeOut" }}
+      >
         <h1
           className={`${anta.className} bg-gradient-p bg-clip-text text-5xl text-transparent`}
         >
           Donate
         </h1>
-      </div>
-      <div className="text-p mt-8 flex flex-row justify-center text-xl">
-        <p className="text-center">
-          We greatly appreciate any donations to help us make DCHacks a success!{" "}
-          <br />
-          <br />
-          DCHacks is fiscally sponsored by{" "}
+      </motion.div>
+      <div className="text-p mt-8 flex flex-col items-center justify-center text-xl">
+        <motion.p
+          className="text-center"
+          initial={{ opacity: 0, y: 12 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, amount: 0.3 }}
+          transition={{ duration: 0.45, ease: "easeOut" }}
+        >
+          We greatly appreciate any donations to help us make DCHacks a success!
+        </motion.p>
+        <motion.p
+          className="mt-6 text-center"
+          initial={{ opacity: 0, y: 12 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, amount: 0.3 }}
+          transition={{ duration: 0.45, ease: "easeOut", delay: 0.05 }}
+        >
+          DCHacks is fiscally sponsored by
+          {" "}
           <Link
             href="https://hackclub.com/"
             target="_blank"
@@ -31,12 +53,23 @@ export function Donate() {
           >
             The Hack Foundation
           </Link>
-          , a 501(c)(3) nonprofit organization, so all donations are{" "}
+          , a 501(c)(3) nonprofit organization, so all donations are
+          {" "}
           <span className="bg-gradient-p bg-clip-text text-transparent">
             tax-deductible
           </span>
-          . We also accept <b>employer donation matches</b>, so your impact can
-          be doubled! Donations may be sent using{" "}
+          .
+        </motion.p>
+        <motion.p
+          className="mt-6 text-center"
+          initial={{ opacity: 0, y: 12 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, amount: 0.3 }}
+          transition={{ duration: 0.45, ease: "easeOut", delay: 0.05 }}
+        >
+          We also accept <b>employer donation matches</b>, so your impact can be
+          doubled! Donations may be sent using
+          {" "}
           <Link
             href="https://hcb.hackclub.com/donations/start/dchacks"
             target="_blank"
@@ -45,14 +78,26 @@ export function Donate() {
             HCB
           </Link>
           , our financial platform.
-          <br />
-          <br />
+        </motion.p>
+        <motion.p
+          className="mt-6 text-center"
+          initial={{ opacity: 0, y: 12 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, amount: 0.3 }}
+          transition={{ duration: 0.45, ease: "easeOut", delay: 0.05 }}
+        >
           Your contribution will help provide students in the DC area with an
           opportunity to build innovative projects and learn new skills with
           peers.
-        </p>
+        </motion.p>
       </div>
-      <div className="mt-8 flex flex-row items-center justify-center">
+      <motion.div
+        className="mt-8 flex flex-row items-center justify-center"
+        initial={{ opacity: 0, y: 12 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true, amount: 0.3 }}
+        transition={{ duration: 0.5, ease: "easeOut", delay: 0.05 }}
+      >
         <Button asChild>
           <Link
             href="https://hcb.hackclub.com/donations/start/dchacks"
@@ -61,7 +106,7 @@ export function Donate() {
             Donate!
           </Link>
         </Button>
-      </div>
+      </motion.div>
     </div>
   );
 }

@@ -1,3 +1,6 @@
+"use client";
+
+import { motion } from "framer-motion";
 import { Anta } from "next/font/google";
 import Link from "next/link";
 import {
@@ -16,14 +19,26 @@ const anta = Anta({
 export function AboutUs() {
   return (
     <div className="mx-auto max-w-5xl p-8 pt-24" id="about">
-      <div className="flex flex-row justify-center">
+      <motion.div
+        className="flex flex-row justify-center"
+        initial={{ opacity: 0, y: 12 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true, amount: 0.3 }}
+        transition={{ duration: 0.5, ease: "easeOut" }}
+      >
         <h1
           className={`${anta.className} bg-gradient-p bg-clip-text text-5xl text-transparent`}
         >
           About Us
         </h1>
-      </div>
-      <div className="mt-16 flex flex-row items-center justify-between">
+      </motion.div>
+      <motion.div
+        className="mt-16 flex flex-row items-center justify-between"
+        initial={{ opacity: 0, y: 16 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true, amount: 0.3 }}
+        transition={{ duration: 0.55, ease: "easeOut" }}
+      >
         <div className="text-p flex w-lg flex-col items-center justify-center gap-y-4">
           <div className="rounded-full border-2 p-3">
             <HiOutlineRocketLaunch size="32px" />
@@ -36,8 +51,14 @@ export function AboutUs() {
             technology while creating a sense of community.
           </p>
         </div>
-      </div>
-      <div className="mx-auto mt-20 flex flex-col items-center">
+      </motion.div>
+      <motion.div
+        className="mx-auto mt-20 flex flex-col items-center"
+        initial={{ opacity: 0, y: 12 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true, amount: 0.3 }}
+        transition={{ duration: 0.5, ease: "easeOut", delay: 0.05 }}
+      >
         <p className="text-p text-xl">
           From the organizers of{" "}
           <Link
@@ -51,8 +72,14 @@ export function AboutUs() {
         <p className="text-p mt-8 text-3xl">
           Join us for a 2-day hackathon this October for all secondary students.
         </p>
-      </div>
-      <div className="mt-20 mr-auto max-w-3/5 text-left">
+      </motion.div>
+      <motion.div
+        className="mt-20 mr-auto max-w-3/5 text-left"
+        initial={{ opacity: 0, y: 12 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true, amount: 0.3 }}
+        transition={{ duration: 0.55, ease: "easeOut", delay: 0.05 }}
+      >
         <div className="text-p">
           <div className="flex flex-row items-end justify-start gap-x-4 pb-4">
             <HiOutlineCalendarDateRange
@@ -90,8 +117,14 @@ export function AboutUs() {
             </b>
           </p>
         </div>
-      </div>
-      <div className="mt-20 ml-auto max-w-3/5 text-right">
+      </motion.div>
+      <motion.div
+        className="mt-20 ml-auto max-w-3/5 text-right"
+        initial={{ opacity: 0, y: 12 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true, amount: 0.3 }}
+        transition={{ duration: 0.55, ease: "easeOut", delay: 0.05 }}
+      >
         <div className="text-p">
           <div className="flex flex-row items-end justify-end gap-x-4 pb-4">
             <h2 className="pb-1 text-3xl">All students may participate!</h2>
@@ -128,7 +161,7 @@ export function AboutUs() {
             </b>
           </p>
         </div>
-      </div>
+      </motion.div>
     </div>
   );
 }

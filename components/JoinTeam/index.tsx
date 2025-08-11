@@ -1,3 +1,6 @@
+"use client";
+
+import { motion } from "framer-motion";
 import { Anta } from "next/font/google";
 import Link from "next/link";
 import {
@@ -17,19 +20,36 @@ export function JoinTeam() {
   return (
     <div className="mx-auto max-w-5xl p-8 pt-16" id="join">
       <div className="bg-gradient-s text-p rounded-2xl px-20 py-12">
-        <div className="flex flex-row justify-center">
+        <motion.div
+          className="flex flex-row justify-center"
+          initial={{ opacity: 0, y: 12 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, amount: 0.3 }}
+          transition={{ duration: 0.5, ease: "easeOut" }}
+        >
           <h1 className={`${anta.className} text-5xl`}>Join Us</h1>
-        </div>
-        <div className="mt-8">
+        </motion.div>
+        <motion.div
+          className="mt-8"
+          initial={{ opacity: 0, y: 12 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, amount: 0.3 }}
+          transition={{ duration: 0.5, ease: "easeOut", delay: 0.05 }}
+        >
           <p className="text-center text-xl">
             We are looking to expand our team to reach as many people as
             possible and increase our impact! If you are a high school student
             and want to help us further our mission, apply to one of our roles
             below.
           </p>
-        </div>
+        </motion.div>
         <div className="mt-12 flex flex-col gap-y-8">
-          <div>
+          <motion.div
+            initial={{ opacity: 0, y: 12 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, amount: 0.3 }}
+            transition={{ duration: 0.5, ease: "easeOut", delay: 0.05 }}
+          >
             <div className="flex flex-row justify-start gap-x-4 pb-4">
               <HiOutlinePaintBrush size="32px" />
               <h2 className={`${anta.className} text-3xl`}>Graphic Designer</h2>
@@ -43,8 +63,13 @@ export function JoinTeam() {
                 Work with our web developers and outreach team
               </li>
             </ul>
-          </div>
-          <div>
+          </motion.div>
+          <motion.div
+            initial={{ opacity: 0, y: 12 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, amount: 0.3 }}
+            transition={{ duration: 0.5, ease: "easeOut", delay: 0.05 }}
+          >
             <div className="flex flex-row justify-start gap-x-4 pb-4">
               <HiOutlineCodeBracket size="32px" />
               <h2 className={`${anta.className} text-3xl`}>
@@ -68,8 +93,13 @@ export function JoinTeam() {
                 Vercel
               </li>
             </ul>
-          </div>
-          <div>
+          </motion.div>
+          <motion.div
+            initial={{ opacity: 0, y: 12 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, amount: 0.3 }}
+            transition={{ duration: 0.5, ease: "easeOut", delay: 0.05 }}
+          >
             <div className="flex flex-row justify-start gap-x-4 pb-4">
               <HiOutlineGlobeAmericas size="32px" />
               <h2 className={`${anta.className} text-3xl`}>Outreach</h2>
@@ -87,15 +117,21 @@ export function JoinTeam() {
                 Help manage communications with participants
               </li>
             </ul>
-          </div>
+          </motion.div>
         </div>
-        <div className="mt-12 flex flex-row justify-center">
+        <motion.div
+          className="mt-12 flex flex-row justify-center"
+          initial={{ opacity: 0, y: 12 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, amount: 0.3 }}
+          transition={{ duration: 0.5, ease: "easeOut", delay: 0.05 }}
+        >
           <Button asChild>
             <Link href="https://link.dchacks.org/apply" target="_blank">
               Apply!
             </Link>
           </Button>
-        </div>
+        </motion.div>
       </div>
     </div>
   );
