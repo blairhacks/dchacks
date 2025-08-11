@@ -15,7 +15,7 @@ const anta = Anta({
 
 export function JoinTeam() {
   return (
-    <div className="mx-auto max-w-7xl p-8 pt-16" id="join">
+    <div className="mx-auto max-w-5xl p-8 pt-16" id="join">
       <div className="bg-gradient-s text-p rounded-2xl px-20 py-12">
         <div className="flex flex-row justify-center">
           <h1 className={`${anta.className} text-5xl`}>Join Us</h1>
