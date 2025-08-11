@@ -17,7 +17,8 @@ export function Hero() {
           <div className="bg-hero-bg rounded-2xl p-8 text-center text-white">
             <h1 className={anta.className + " mb-4 text-8xl"}>DCHacks</h1>
             <p className="text-xl">
-              Join 100 other high schoolers for a weekend of building, innovation, and collaboration! Coming to DC this October.
+              Join 100 other high schoolers for a weekend of building,
+              innovation, and collaboration! Coming to DC this October.
             </p>
           </div>
         </div>

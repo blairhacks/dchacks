@@ -48,8 +48,12 @@ export function Sponsors() {
         </p>
       </div>
       <div className="mt-8 flex flex-row items-center justify-center gap-x-12">
-        <Button asChild><Link href="/dchacks_prospectus.pdf">Sponsorship Package</Link></Button>
-        <Button asChild><Link href="mailto:blairhacks@gmail.com">Sponsor Us!</Link></Button>
+        <Button asChild>
+          <Link href="/dchacks_prospectus.pdf">Sponsorship Package</Link>
+        </Button>
+        <Button asChild>
+          <Link href="mailto:blairhacks@gmail.com">Sponsor Us!</Link>
+        </Button>
       </div>
     </div>
   );
