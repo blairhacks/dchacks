@@ -47,7 +47,8 @@ export function Sponsors() {
           transition={{ duration: 0.45, ease: "easeOut", delay: 0.05 }}
         >
           All contributions are tax-deductible, as DCHacks is fiscally sponsored
-          by <Link
+          by{" "}
+          <Link
             href="https://hackclub.com/"
             className="bg-gradient-p gradient-underline-p bg-clip-text text-transparent"
           >
@@ -63,7 +64,8 @@ export function Sponsors() {
           transition={{ duration: 0.45, ease: "easeOut", delay: 0.05 }}
         >
           View more information about our sponsorship packages below. Contact us
-          by filling out the form or emailing us at <Link
+          by filling out the form or emailing us at{" "}
+          <Link
             href="mailto:blairhacks@gmail.com"
             className="bg-gradient-p gradient-underline-p bg-clip-text text-transparent"
           >

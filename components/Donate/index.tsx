@@ -44,8 +44,7 @@ export function Donate() {
           viewport={{ once: true, amount: 0.3 }}
           transition={{ duration: 0.45, ease: "easeOut", delay: 0.05 }}
         >
-          DCHacks is fiscally sponsored by
-          {" "}
+          DCHacks is fiscally sponsored by{" "}
           <Link
             href="https://hackclub.com/"
             target="_blank"
@@ -53,8 +52,7 @@ export function Donate() {
           >
             The Hack Foundation
           </Link>
-          , a 501(c)(3) nonprofit organization, so all donations are
-          {" "}
+          , a 501(c)(3) nonprofit organization, so all donations are{" "}
           <span className="bg-gradient-p bg-clip-text text-transparent">
             tax-deductible
           </span>
@@ -68,8 +66,7 @@ export function Donate() {
           transition={{ duration: 0.45, ease: "easeOut", delay: 0.05 }}
         >
           We also accept <b>employer donation matches</b>, so your impact can be
-          doubled! Donations may be sent using
-          {" "}
+          doubled! Donations may be sent using{" "}
           <Link
             href="https://hcb.hackclub.com/donations/start/dchacks"
             target="_blank"
