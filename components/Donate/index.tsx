@@ -3,9 +3,9 @@
 import { motion } from "framer-motion";
 import { Anta } from "next/font/google";
 import {
+  HiOutlineCurrencyDollar,
   HiOutlineHeart,
   HiOutlineShieldCheck,
-  HiOutlineCurrencyDollar,
 } from "react-icons/hi2";
 
 import { Button } from "@/components/ui/button";

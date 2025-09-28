@@ -25,12 +25,12 @@ export function FAQ() {
     {
       question: "Who can participate?",
       answer:
-        "DCHacks is open to all high school students in the DC metro area. Whether you're a complete beginner or an experienced developer, everyone is welcome! We provide workshops, mentorship, and resources for all skill levels.",
+        "DCHacks is open to all secondary students who are 18 or younger. Whether you're a complete beginner or an experienced developer, everyone is welcome! We provide workshops, mentorship, and resources for all skill levels.",
     },
     {
       question: "When and where is DCHacks 2025?",
       answer:
-        "DCHacks 2025 will take place in October 2025 in Washington, DC. The exact dates and venue will be announced closer to the event. Registration will open around August 2025.",
+        "DCHacks 2025's exact date and location are still yet to be determined. Stay tuned for more info!",
     },
     {
       question: "What should I bring?",

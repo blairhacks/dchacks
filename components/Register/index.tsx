@@ -3,8 +3,8 @@
 import { motion, useScroll, useTransform } from "framer-motion";
 import { Anta } from "next/font/google";
 import {
-  HiOutlineCalendar,
   HiOutlineArrowRight,
+  HiOutlineCalendar,
   HiOutlineClock,
 } from "react-icons/hi2";
 
@@ -134,13 +134,13 @@ export function Register() {
                 registration will open around
                 <span className="font-semibold text-red-600">
                   {" "}
-                  August 2025
+                  Date TBD
                 </span>{" "}
                 when we have all the details finalized.
               </p>
               <div className="inline-flex items-center gap-2 rounded-full bg-red-500/20 px-4 py-2 text-sm font-medium text-red-600">
                 <HiOutlineCalendar size={16} />
-                <span>Expected: August 2025</span>
+                <span>Expected: Date TBD</span>
               </div>
             </div>
 
@@ -326,15 +326,17 @@ export function Register() {
             <h3 className="mb-4 text-3xl font-bold text-gray-800">
               Ready to Join the{" "}
               <span className="bg-gradient-to-r from-red-600 to-pink-600 bg-clip-text text-transparent">
-                Waitlist?
+                Mailing List?
               </span>
             </h3>
             <p className="mb-8 text-xl leading-relaxed text-gray-800">
-              Don&apos;t miss out! Join our waitlist now and get early access to
-              all the latest updates about DCHacks 2025.
+              Don&apos;t miss out! Join our mailing list now and get early
+              access to all the latest updates about DCHacks 2025.
             </p>
             <Button className="group bg-gradient-to-r from-red-500 to-pink-600 px-8 py-4 text-lg text-white transition-all duration-200 hover:scale-105 hover:from-red-600 hover:to-pink-700">
-              Join Waitlist
+              <a href="https://link.dchacks.org/interest" target="_blank">
+                Join Mailing List
+              </a>
               <HiOutlineArrowRight className="ml-2 h-5 w-5 transition-transform group-hover:translate-x-1" />
             </Button>
           </div>

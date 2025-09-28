@@ -3,13 +3,13 @@
 import { motion, useScroll, useTransform } from "framer-motion";
 import { Anta } from "next/font/google";
 import {
+  HiOutlineArrowRight,
   HiOutlineBolt,
-  HiOutlineUsers,
   HiOutlineCodeBracket,
+  HiOutlineGlobeAmericas,
   HiOutlineLightBulb,
   HiOutlineSparkles,
-  HiOutlineArrowRight,
-  HiOutlineGlobeAmericas,
+  HiOutlineUsers,
 } from "react-icons/hi2";
 
 import { Button } from "@/components/ui/button";
@@ -28,7 +28,6 @@ export function JoinTeam() {
       icon: HiOutlineLightBulb,
       title: "Graphic Designer",
       description: "Create stunning visual content for our brand",
-      color: "from-red-500 to-pink-500",
       responsibilities: [
         "Create digital artwork for website, posters, and social media",
         "Work with web developers and outreach team",
@@ -40,7 +39,6 @@ export function JoinTeam() {
       icon: HiOutlineCodeBracket,
       title: "UI Designer or Developer",
       description: "Shape the digital experience of DCHacks",
-      color: "from-red-500 to-pink-500",
       responsibilities: [
         "Design and build our website using modern tools",
         "Work with Figma, Next.js/React, and Tailwind CSS",
@@ -52,7 +50,6 @@ export function JoinTeam() {
       icon: HiOutlineGlobeAmericas,
       title: "Outreach Coordinator",
       description: "Spread the word and build our community",
-      color: "from-red-500 to-pink-500",
       responsibilities: [
         "Promote DCHacks in schools and communities",
         "Create engaging social media content",
@@ -107,7 +104,7 @@ export function JoinTeam() {
           </p>
         </motion.div>
 
-        {/* Why Join Section - Creative Visual Layout */}
+        {/* Why Join Section */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -134,12 +131,9 @@ export function JoinTeam() {
           </div>
 
           <div className="relative">
-            {/* Abstract Visual Composition */}
+            {/* Visual */}
             <div className="relative h-64 w-full">
-              {/* Background Pattern */}
               <div className="absolute inset-0 rounded-2xl bg-gradient-to-br from-red-500/5 to-pink-500/5" />
-
-              {/* Geometric Elements */}
               <motion.div
                 animate={{ rotate: 360 }}
                 transition={{ duration: 20, repeat: Infinity, ease: "linear" }}
@@ -163,8 +157,6 @@ export function JoinTeam() {
                 }}
                 className="absolute right-12 bottom-8 h-12 w-12 rounded-lg border border-red-300/40"
               />
-
-              {/* Content Overlay */}
               <div className="absolute inset-0 flex items-center justify-center">
                 <div className="grid grid-cols-2 gap-4">
                   {[
@@ -213,7 +205,6 @@ export function JoinTeam() {
           </div>
 
           <div className="relative">
-            {/* Timeline Line */}
             <div className="absolute top-0 left-1/2 h-full w-1 -translate-x-1/2 bg-gradient-to-b from-red-500/30 to-pink-500/30" />
 
             <div className="space-y-16">
@@ -228,10 +219,8 @@ export function JoinTeam() {
                     index % 2 === 0 ? "lg:text-left" : "lg:text-right"
                   }`}
                 >
-                  {/* Timeline Dot */}
                   <div className="absolute top-8 left-1/2 h-6 w-6 -translate-x-1/2 rounded-full border-4 border-white bg-gradient-to-br from-red-500 to-pink-600 shadow-lg" />
 
-                  {/* Content */}
                   <div
                     className={`space-y-6 ${
                       index % 2 === 0 ? "lg:pr-12" : "lg:order-2 lg:pl-12"
@@ -271,17 +260,13 @@ export function JoinTeam() {
                     </div>
                   </div>
 
-                  {/* Creative Visual Element */}
                   <div
                     className={`relative ${
                       index % 2 === 0 ? "lg:order-2" : "lg:order-1"
                     }`}
                   >
                     <div className="relative h-80 w-full overflow-hidden rounded-3xl">
-                      {/* Background Pattern */}
                       <div className="absolute inset-0 bg-gradient-to-br from-red-500/10 to-pink-500/10" />
-
-                      {/* Abstract Shapes */}
                       <motion.div
                         animate={{ rotate: 360 }}
                         transition={{
@@ -309,8 +294,6 @@ export function JoinTeam() {
                         }}
                         className="absolute right-16 bottom-12 h-10 w-10 rounded-lg border border-red-300/30"
                       />
-
-                      {/* Central Content */}
                       <div className="absolute inset-0 flex items-center justify-center">
                         <div className="space-y-4 text-center">
                           <h5 className="mb-2 text-2xl font-bold text-gray-800">
@@ -321,8 +304,6 @@ export function JoinTeam() {
                           </p>
                         </div>
                       </div>
-
-                      {/* Decorative Lines */}
                       <div className="absolute top-1/2 left-4 h-12 w-0.5 -translate-y-1/2 bg-gradient-to-b from-transparent via-red-400/20 to-transparent" />
                       <div className="absolute top-1/2 right-4 h-12 w-0.5 -translate-y-1/2 bg-gradient-to-b from-transparent via-pink-400/20 to-transparent" />
                     </div>
@@ -339,9 +320,9 @@ export function JoinTeam() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, amount: 0.3 }}
           transition={{ duration: 0.8, ease: "easeOut" }}
-          className="rounded-3xl border border-red-200 bg-white/80 p-8 shadow-sm backdrop-blur-sm sm:p-12"
+          className="rounded-3xl border border-red-200 bg-white/80 p-12 shadow-sm backdrop-blur-sm"
         >
-          <div className="grid items-center gap-8 lg:grid-cols-3">
+          <div className="grid items-center gap-12 lg:grid-cols-2">
             <div className="space-y-6">
               <div className="inline-flex items-center gap-2 rounded-full border border-red-500/30 bg-gradient-to-r from-red-500/20 to-pink-500/20 px-4 py-2 text-sm text-red-700 backdrop-blur-sm">
                 <HiOutlineSparkles size={16} />
@@ -356,30 +337,15 @@ export function JoinTeam() {
               <p className="text-xl leading-relaxed text-gray-800">
                 We&apos;re looking for dedicated high school students who are
                 passionate about technology and community building. No prior
-                experience required - just enthusiasm and commitment!
+                experience required — just enthusiasm and commitment!
               </p>
             </div>
 
-            {/* Image placeholder */}
-            <div className="flex justify-center">
-              <div className="h-48 w-48 rounded-2xl border-2 border-dashed border-red-300 bg-gradient-to-br from-red-50/50 to-pink-50/50 shadow-lg">
-                <div className="flex h-full w-full items-center justify-center">
-                  <div className="text-center">
-                    <div className="mx-auto mb-2 flex h-12 w-12 items-center justify-center rounded-full bg-gradient-to-br from-red-500/20 to-pink-500/20">
-                      <span className="text-xl">👥</span>
-                    </div>
-                    <p className="text-xs font-medium text-gray-600">
-                      Team Image
-                    </p>
-                    <p className="text-xs text-gray-500">400x300px</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div className="text-center">
-              <Button className="group bg-gradient-to-r from-red-500 to-pink-600 px-8 py-4 text-lg text-white hover:from-red-600 hover:to-pink-700">
-                Apply Now
+            <div className="flex justify-center lg:justify-end">
+              <Button className="group bg-gradient-to-r from-red-500 to-pink-600 px-10 py-5 text-lg text-white hover:from-red-600 hover:to-pink-700">
+                <a href="https://link.dchacks.org/apply" target="_blank">
+                  Apply Now!
+                </a>
                 <HiOutlineArrowRight className="ml-2 h-5 w-5 transition-transform group-hover:translate-x-1" />
               </Button>
             </div>

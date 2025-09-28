@@ -123,7 +123,7 @@ export function Hero() {
             >
               {[
                 {
-                  label: "October 2025",
+                  label: "Date TBD",
                   color: "from-red-500 to-pink-500",
                 },
                 {
@@ -186,6 +186,7 @@ export function Hero() {
             transition={{ duration: 0.8, delay: 0.4 }}
           >
             {/* Image placeholder */}
+            {/*
             <div className="relative flex h-96 w-full items-center justify-center">
               <motion.div
                 className="absolute inset-0 rounded-3xl bg-gradient-to-br from-red-500/20 to-pink-500/20 blur-3xl"
@@ -212,7 +213,7 @@ export function Hero() {
                   </div>
                 </div>
               </div>
-            </div>
+            </div> */}
           </motion.div>
         </div>
 

@@ -1,7 +1,7 @@
 "use client";
 
 import { Anta } from "next/font/google";
-import { useState, useEffect } from "react";
+import { useEffect, useState } from "react";
 import { HiMenu, HiX } from "react-icons/hi";
 
 import { ScrollTo } from "@/components/ScrollTo";

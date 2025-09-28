@@ -3,10 +3,10 @@
 import { motion } from "framer-motion";
 import { Anta } from "next/font/google";
 import {
-  HiOutlineHeart,
   HiOutlineCurrencyDollar,
   HiOutlineDocumentText,
   HiOutlineEnvelope,
+  HiOutlineHeart,
   HiOutlineShieldCheck,
 } from "react-icons/hi2";
 
@@ -67,7 +67,7 @@ export function Sponsors() {
             </div>
 
             {/* Image placeholder */}
-            <div className="flex justify-center">
+            {/* <div className="flex justify-center">
               <div className="h-64 w-80 rounded-2xl border-2 border-dashed border-red-300 bg-gradient-to-br from-red-50/50 to-pink-50/50 shadow-lg">
                 <div className="flex h-full w-full items-center justify-center">
                   <div className="text-center">
@@ -83,7 +83,7 @@ export function Sponsors() {
                   </div>
                 </div>
               </div>
-            </div>
+            </div> */}
           </div>
         </motion.div>
 
@@ -301,7 +301,10 @@ export function Sponsors() {
                   size="lg"
                   className="bg-gradient-to-r from-red-500 to-pink-600 px-8 py-4 text-lg text-white hover:from-red-600 hover:to-pink-700"
                 >
-                  <a href="/dchacks_prospectus.pdf" target="_blank">
+                  <a
+                    href="https://www.dchacks.org/dchacks_prospectus.pdf"
+                    target="_blank"
+                  >
                     <HiOutlineDocumentText size={20} className="mr-2" />
                     Download Prospectus
                   </a>
