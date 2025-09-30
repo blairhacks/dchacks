@@ -45,7 +45,7 @@ export function Register() {
   const steps = [
     {
       number: "01",
-      title: "Join Waitlist",
+      title: "Join Mailing list",
       description: "Sign up to be notified when registration opens",
     },
     {
@@ -190,7 +190,7 @@ export function Register() {
                         Stay in the Loop
                       </h4>
                       <p className="text-gray-600">
-                        Join our waitlist to get notified as soon as
+                        Join our mailing list to get notified as soon as
                         registration opens!
                       </p>
                     </div>
@@ -217,7 +217,7 @@ export function Register() {
             <h3 className="mb-4 text-4xl font-bold text-gray-800">
               Why Join the{" "}
               <span className="bg-gradient-to-r from-red-600 to-pink-600 bg-clip-text text-transparent">
-                Waitlist?
+                Mailing list?
               </span>
             </h3>
             <p className="text-xl text-gray-600">
