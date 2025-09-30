@@ -4,14 +4,24 @@ import { GoogleAnalytics } from "@next/third-parties/google";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 
+import { Navbar } from "@/components/Navbar";
+
 const inter = Inter({
   subsets: ["latin"],
-  weight: "400",
+  weight: ["300", "400", "500", "600", "700"],
 });
 
 export const metadata: Metadata = {
-  title: "DCHacks",
-  description: "High School Hackathon in DC Metro Area",
+  title: "DCHacks 2025",
+  description:
+    "High School Hackathon in DC Metro Area - Join 100+ students for innovation, collaboration, and building the future",
+  keywords:
+    "hackathon, high school, DC, Washington, coding, programming, technology",
+  openGraph: {
+    title: "DCHacks 2025",
+    description: "High School Hackathon in DC Metro Area",
+    type: "website",
+  },
 };
 
 export default function RootLayout({
@@ -20,13 +30,13 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" className="scroll-smooth">
       <GoogleAnalytics gaId="G-T54MKE337Q" />
       <body
         className={"antialiased " + inter.className}
         suppressHydrationWarning
       >
-        {/* <Navbar /> */}
+        <Navbar />
         {children}
       </body>
     </html>
