@@ -17,9 +17,11 @@ export function Hero() {
     <div className="flex h-[110vh] w-full flex-col bg-[url(/hero_image.png)] bg-cover bg-top bg-no-repeat">
       <div className="flex h-[100vh] grow flex-col items-center justify-center">
         <div className="flex flex-1 flex-col items-center justify-end">
-          <div className="bg-hero-bg rounded-2xl p-8 text-center text-white">
-            <h1 className={anta.className + " mb-4 text-8xl"}>DCHacks</h1>
-            <p className="text-xl">
+          <div className="bg-hero-bg mx-4 rounded-2xl p-8 text-center text-white lg:mx-0">
+            <h1 className={anta.className + " mb-4 text-6xl sm:text-8xl"}>
+              DCHacks
+            </h1>
+            <p className="text-md md:text-xl">
               Join 100 other high schoolers for a weekend of building,
               innovation, and collaboration! Coming to DC this October.
             </p>
@@ -28,7 +30,7 @@ export function Hero() {
         <div className="flex flex-1 flex-col items-center justify-end">
           <div className="flex flex-col items-center">
             <motion.div
-              className="mb-16 flex flex-row gap-12"
+              className="mb-16 flex flex-col items-center gap-6 md:flex-row md:gap-12"
               initial={{ opacity: 0, y: 12 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, amount: 0.3 }}

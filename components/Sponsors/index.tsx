@@ -84,7 +84,7 @@ export function Sponsors() {
         </motion.p>
       </div>
       <motion.div
-        className="mt-8 flex flex-row items-center justify-center gap-x-12"
+        className="mt-8 flex flex-col items-center justify-center gap-y-6 md:flex-row md:gap-x-12 md:gap-y-0"
         initial={{ opacity: 0, y: 12 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true, amount: 0.3 }}

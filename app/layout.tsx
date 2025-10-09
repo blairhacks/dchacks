@@ -20,10 +20,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" className="overflow-x-hidden">
       <GoogleAnalytics gaId="G-T54MKE337Q" />
       <body
-        className={"antialiased " + inter.className}
+        className={"overflow-x-hidden antialiased " + inter.className}
         suppressHydrationWarning
       >
         {/* <Navbar /> */}
