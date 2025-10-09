@@ -33,19 +33,19 @@ export function AboutUs() {
         </h1>
       </motion.div>
       <motion.div
-        className="mt-16 flex flex-row items-center justify-between"
+        className="mt-16 flex flex-col items-center justify-between gap-y-4 md:flex-row"
         initial={{ opacity: 0, y: 16 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true, amount: 0.3 }}
         transition={{ duration: 0.55, ease: "easeOut" }}
       >
-        <div className="text-p flex w-lg flex-col items-center justify-center gap-y-4">
+        <div className="text-p flex flex-col items-center justify-center gap-y-4 md:w-lg">
           <div className="rounded-full border-2 p-3">
             <HiOutlineRocketLaunch size="32px" />
           </div>
           <p className="text-center text-3xl">Our Mission</p>
         </div>
-        <div className="bg-gradient-s flex w-lg flex-row items-center justify-center rounded-2xl p-8">
+        <div className="bg-gradient-s flex flex-row items-center justify-center rounded-2xl p-8 md:w-lg">
           <p className="text-p text-center text-xl">
             Our mission is to inspire students to innovate and build using
             technology while creating a sense of community.
@@ -74,7 +74,7 @@ export function AboutUs() {
         </p>
       </motion.div>
       <motion.div
-        className="mt-20 mr-auto max-w-3/5 text-left"
+        className="mt-20 mr-auto max-w-5/6 text-left md:max-w-3/5"
         initial={{ opacity: 0, y: 12 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true, amount: 0.3 }}
@@ -119,7 +119,7 @@ export function AboutUs() {
         </div>
       </motion.div>
       <motion.div
-        className="mt-20 ml-auto max-w-3/5 text-right"
+        className="mt-20 ml-auto max-w-5/6 text-right md:max-w-3/5"
         initial={{ opacity: 0, y: 12 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true, amount: 0.3 }}

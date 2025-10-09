@@ -19,7 +19,7 @@ const anta = Anta({
 export function JoinTeam() {
   return (
     <div className="mx-auto max-w-5xl p-8 pt-16" id="join">
-      <div className="bg-gradient-s text-p rounded-2xl px-20 py-12">
+      <div className="bg-gradient-s text-p rounded-2xl px-12 py-12 md:px-20 md:py-12">
         <motion.div
           className="flex flex-row justify-center"
           initial={{ opacity: 0, y: 12 }}
